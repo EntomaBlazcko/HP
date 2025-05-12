@@ -1,0 +1,651 @@
+<!--index.html-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+     <script src="index.js"></script>
+    <title>Hyper Rents</title>
+
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="nav-left">
+            <a href="#" onclick="navigateTo('home-section'); return false;">HOME</a>
+            <a href="#" onclick="navigateTo('vehicles-section'); return false;">VEHICLES</a>
+            <a href="#contact">CONTACT US</a>
+        </div>
+        <div class="logo">HYPER RENTS</div>
+        <div class="nav-right">
+            <div class="time-container">
+                <div class="time" id="current-time"></div>
+            </div>
+            <img src="/ITHCI ASSETS/burger.svg" alt="Menu" class="hamburger-icon" onclick="toggleMenu();">
+            <img src="/ITHCI ASSETS/profile.svg" alt="profile" class="profile-icon" onclick="location.href='profile.html'">
+        </div>
+    </div>
+    
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu" style="display: none;">
+        <div class="close-menu" onclick="toggleMenu()"><img src="/ITHCI ASSETS/X.svg"></div>
+        <a href="profile.html">PROFILE</a>
+        <a href="#" onclick="navigateTo('home-section'); toggleMenu(); return false;">HOME</a>
+        <a href="#" onclick="navigateTo('vehicles-section'); toggleMenu(); return false;">VEHICLES</a>
+        <a href="#contact" onclick="toggleMenu();">CONTACT US</a>
+        <a href="login.html" onclick="logout(); toggleMenu();">LOG OUT</a>
+    </div>
+    
+    <!-- Home Section -->
+    <section id="home-section" class="page-section active">
+        <div class="main-banner">
+    <img src="/ITHCI ASSETS/AE86.jpg" alt="ICONIC AT86">
+    <div class="banner-content">
+        <h2>ICONIC AT86</h2>
+        <p>HYPE THE RIDE MAKE IT MEMORABLE</p>
+        <div class="japanese-text">水素エンジノ（総務）</div>
+       <button class="rent-button" id="homepage-rent-btn">RENT NOW</button>
+
+    </div>
+    <div class="bottom-text">
+     © 2025 Hyper Rents. All rights reserved.
+    </div>
+</div>
+
+<div class="gallery-slider">
+  <div class="slides">
+    <img src="/ITHCI ASSETS/1.svg" class="active">
+    <img src="/ITHCI ASSETS/2.svg">
+    <img src="/ITHCI ASSETS/3.svg">
+    <img src="/ITHCI ASSETS/4.svg">
+    <img src="/ITHCI ASSETS/5.svg">
+    <img src="/ITHCI ASSETS/6.svg">
+    <img src="/ITHCI ASSETS/7.svg">
+    <img src="/ITHCI ASSETS/8.svg">
+    <img src="/ITHCI ASSETS/9.svg">
+    <img src="/ITHCI ASSETS/10.svg">
+    <img src="/ITHCI ASSETS/BMW 135i.png">
+    <img src="/ITHCI ASSETS/CHEVROLLETE CORVET-C8.png">
+    <img src="/ITHCI ASSETS/LAMBORGHINI-URUS.png">
+    <img src="/ITHCI ASSETS/MAZDA MX-5.png">
+    <img src="/ITHCI ASSETS/NISSAN GTR-33.png">
+    <img src="/ITHCI ASSETS/TOYOTA SUPRA MK5.png">
+  </div>
+  <button class="slider-btn prev">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
+  <button class="slider-btn next">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
+  <div class="slider-dots"></div>
+</div>
+
+        <!-- Showcase Section -->
+        <h2 class="section-title">SHOWCASES</h2>
+        <div class="car-grid">
+            <div class="car-card">
+                <h3>TOYOTA GR86</h3>
+                <img class="car" src="ITHCI ASSETS/1.svg" alt="Toyota GR86">
+                <div class="specs">
+                    <div class="bold">YEAR</div><div>2024</div>
+                    <div><img class="flag" src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Flag_of_Europe.svg" alt="EU Flag"></div><div>EU</div>
+                    <div class="bold">Engine</div><div>2.4L 4 CYLINDER</div>
+                    <div class="bold">0-100 KM/h</div><div>6.1 S</div>
+                    <div class="bold">Power</div><div>228 HP</div>
+                    <div class="bold">Top Speed</div><div>216 KM/h</div>
+                    <div class="bold">Torque</div><div>228 NM</div>
+                </div>
+            </div>
+            <div class="car-card">
+                <h3>NISSAN Z RZ34</h3>
+                <img class="car" src="/ITHCI ASSETS/2.svg" alt="Honda Civic">
+                <div class="specs">
+                    <div class="bold">YEAR</div><div>2023</div>
+                    <div><img class="flag" src="https://upload.wikimedia.org/wikipedia/commons/9/9e/Flag_of_Japan.svg" alt="JP Flag"></div><div>JP</div>
+                    <div class="bold">Engine</div><div>3.0 L TWIN TURBO V6</div>
+                    <div class="bold">0-100 KM/h</div><div>4.5 S</div>
+                    <div class="bold">Power</div><div>400 HP</div>
+                    <div class="bold">Top Speed</div><div>249 KM/h</div>
+                    <div class="bold">Torque</div><div>365 NM</div>
+                </div>
+            </div>
+            <div class="car-card">
+              <h3>TOYOTA GR SUPRA</h3>
+                <img class="car" src="/ITHCI ASSETS/3.svg" alt="BMW M3">
+                <div class="specs">
+                    <div class="bold">YEAR</div><div>2020</div>
+                    <div><img class="flag" src="https://upload.wikimedia.org/wikipedia/commons/4/41/Flag_of_Austria.svg" alt="AUT Flag"></div><div>AUT</div>
+                    <div class="bold">Engine</div><div>3.0L TWIN TURBO INLINE-6</div>
+                    <div class="bold">0-100 KM/h</div><div>4.3 S</div>
+                    <div class="bold">Power</div><div>435 HP</div>
+                    <div class="bold">Top Speed</div><div>249 KM/h</div>
+                    <div class="bold">Torque</div><div>500 NM</div>
+                </div>
+            </div>
+              <div class="car-card">
+                <h3>TOYOTA GR SUPRA</h3>
+                <img class="car" src="/ITHCI ASSETS/4.svg" alt="GTR-35">
+                <div class="specs">
+                    <div class="bold">YEAR</div><div>2009</div>
+                    <div><img class="flag" src="https://upload.wikimedia.org/wikipedia/commons/9/9e/Flag_of_Japan.svg" alt="JP Flag"></div><div>JP</div>
+                    <div class="bold">Engine</div><div>3.8L TWIN TURBO V-6</div>
+                    <div class="bold">0-100 KM/h</div><div>6.7</div>
+                    <div class="bold">Power</div><div>480 HP</div>
+                    <div class="bold">Top Speed</div><div>315 KM/h</div>
+                    <div class="bold">Torque</div><div>637 NM</div>
+                </div>
+            </div>
+        </div>
+        
+        
+    </section>
+    
+    <!-- Vehicles Section -->
+    <section id="vehicles-section" class="page-section">
+        <h2 class="section-title">AVAILABLE CARS</h2>
+        
+        <!-- Dropdown Filters Section -->
+        <div class="dropdown-filters">
+            <!-- Make Filter -->
+            <div class="dropdown-filter">
+                <button class="filter-btn" onclick="toggleDropdown('make-dropdown')">
+                    <span id="make-label">All Makes</span>
+                </button>
+                <div class="filter-dropdown" id="make-dropdown">
+                    <div class="filter-option" onclick="selectFilter('make', '', 'All Makes')">All Makes</div>
+                    <div class="filter-option" onclick="selectFilter('make', 'toyota', 'Toyota')">Toyota</div>
+                    <div class="filter-option" onclick="selectFilter('make', 'honda', 'Honda')">Honda</div>
+                    <div class="filter-option" onclick="selectFilter('make', 'bmw', 'BMW')">BMW</div>
+                    <div class="filter-option" onclick="selectFilter('make', 'audi', 'Audi')">Audi</div>
+                    <div class="filter-option" onclick="selectFilter('make', 'mercedes', 'Mercedes')">Mercedes</div>
+                    <div class="filter-option" onclick="selectFilter('make', 'tesla', 'Tesla')">Tesla</div>
+                </div>
+            </div>
+            
+            <!-- Model Filter -->
+            <div class="dropdown-filter">
+                <button class="filter-btn" onclick="toggleDropdown('model-dropdown')">
+                    <span id="model-label">All Models</span>
+                </button>
+                <div class="filter-dropdown" id="model-dropdown">
+                    <div class="filter-option" onclick="selectFilter('model', '', 'All Models')">All Models</div>
+                    <!-- Models will be populated dynamically based on make selection -->
+                </div>
+            </div>
+            
+            <!-- Year Filter -->
+            <div class="dropdown-filter">
+                <button class="filter-btn" onclick="toggleDropdown('year-dropdown')">
+                    <span id="year-label">All Years</span>
+                </button>
+                <div class="filter-dropdown" id="year-dropdown">
+                    <div class="filter-option" onclick="selectFilter('year', '', 'All Years')">All Years</div>
+                    <div class="filter-option" onclick="selectFilter('year', '2024', '2024')">2024</div>
+                    <div class="filter-option" onclick="selectFilter('year', '2023', '2023')">2023</div>
+                    <div class="filter-option" onclick="selectFilter('year', '2022', '2022')">2022</div>
+                    <div class="filter-option" onclick="selectFilter('year', '2021', '2021')">2021</div>
+                </div>
+            </div>
+            
+            <!-- Price Filter -->
+            <div class="dropdown-filter">
+                <button class="filter-btn" onclick="toggleDropdown('price-dropdown')">
+                    <span id="price-label">All Prices</span>
+                </button>
+                <div class="filter-dropdown" id="price-dropdown">
+                    <div class="filter-option" onclick="selectFilter('price', '', 'All Prices')">All Prices</div>
+                    <div class="filter-option" onclick="selectFilter('price', 'under30', 'Under $30k')">Under $30k</div>
+                    <div class="filter-option" onclick="selectFilter('price', '30-50', '$30k - $50k')">$30k - $50k</div>
+                    <div class="filter-option" onclick="selectFilter('price', '50-80', '$50k - $80k')">$50k - $80k</div>
+                    <div class="filter-option" onclick="selectFilter('price', 'over80', 'Over $80k')">Over $80k</div>
+                </div>
+            </div>
+            
+            <!-- Engine Filter -->
+            <div class="dropdown-filter">
+                <button class="filter-btn" onclick="toggleDropdown('engine-dropdown')">
+                    <span id="engine-label">All Engines</span>
+                </button>
+                <div class="filter-dropdown" id="engine-dropdown">
+                    <div class="filter-option" onclick="selectFilter('engine', '', 'All Engines')">All Engines</div>
+                    <div class="filter-option" onclick="selectFilter('engine', 'electric', 'Electric')">Electric</div>
+                    <div class="filter-option" onclick="selectFilter('engine', 'hybrid', 'Hybrid')">Hybrid</div>
+                    <div class="filter-option" onclick="selectFilter('engine', 'petrol', 'Petrol')">Petrol</div>
+                    <div class="filter-option" onclick="selectFilter('engine', 'diesel', 'Diesel')">Diesel</div>
+                </div>
+            </div>
+            
+            <div class="filter-actions">
+                <button class="reset-btn" onclick="resetFilters()">Reset</button>
+                <button class="apply-btn" onclick="applyFilters()">Apply</button>
+            </div>
+        </div>
+        
+          <div class="car-grid" id="cars-container">
+        <!-- Car Card 1 -->
+        <div class="car-card" data-make="toyota" data-model="gr86" data-year="2024" data-price="35000" data-engine="petrol">
+            <h3>TOYOTA GR86</h3>
+            <img class="car" src="/ITHCI ASSETS/1.svg" alt="Toyota GR86">
+            <div class="specs">
+                <div class="bold">YEAR</div><div>2024</div>
+                <div><img class="flag" src="https://upload.wikimedia.org/wikipedia/commons/9/9e/Flag_of_Japan.svg" alt="JP Flag"></div><div>JP</div>
+                <div class="bold">Engine</div><div>2.4L Petrol</div>
+                <div class="bold">0-100 KM/h</div><div>6.1 S</div>
+                <div class="bold">Power</div><div>228 HP</div>
+                <div class="bold">Top Speed</div><div>216 KM/h</div>
+                <div class="bold">Torque</div><div>250 NM</div>
+                <div class="bold">Price</div><div>$35,000</div>
+            </div>
+            <div style="display: flex; gap: 10px;">
+                <button class="view-details" onclick="location.href='rent-details.html?car=ToyotaGR86'">View Details</button>
+                <button class="rent-button-card view-details" style="flex-grow: 1;" onclick="location.href='rent-details.html?car=ToyotaGR86'">RENT NOW</button>
+            </div>
+        </div>
+
+        <!-- Car Card 2 -->
+        <div class="car-card" data-make="toyota" data-model="gt86" data-year="2023" data-price="30000" data-engine="petrol">
+            <h3>TOYOTA GT86</h3>
+            <img class="car" src="/ITHCI ASSETS/TOYOTA-GT86.png" alt="Toyota GT86">
+            <div class="specs">
+                <div class="bold">YEAR</div><div>2023</div>
+                <div><img class="flag" src="https://upload.wikimedia.org/wikipedia/commons/9/9e/Flag_of_Japan.svg" alt="JP Flag"></div><div>JP</div>
+                <div class="bold">Engine</div><div>2.0L Petrol</div>
+                <div class="bold">0-100 KM/h</div><div>7.6 S</div>
+                <div class="bold">Power</div><div>197 HP</div>
+                <div class="bold">Top Speed</div><div>225 KM/h</div>
+                <div class="bold">Torque</div><div>205 NM</div>
+                <div class="bold">Price</div><div>$30,000</div>
+            </div>
+            <div style="display: flex; gap: 10px;">
+                <button class="view-details" onclick="location.href='rent-details.html?car=ToyotaGT86'">View Details</button>
+                <button class="rent-button-card view-details" style="flex-grow: 1;" onclick="location.href='rent-details.html?car=ToyotaGT86'">RENT NOW</button>
+            </div>
+        </div>
+
+        <!-- Car Card 3 -->
+        <div class="car-card" data-make="toyota" data-model="supra-mk4" data-year="1998" data-price="60000" data-engine="petrol">
+            <h3>TOYOTA SUPRA MK4</h3>
+            <img class="car" src="/ITHCI ASSETS/4.svg" alt="Toyota Supra MK4">
+            <div class="specs">
+                <div class="bold">YEAR</div><div>1998</div>
+                <div><img class="flag" src="https://upload.wikimedia.org/wikipedia/commons/9/9e/Flag_of_Japan.svg" alt="JP Flag"></div><div>JP</div>
+                <div class="bold">Engine</div><div>3.0L Petrol</div>
+                <div class="bold">0-100 KM/h</div><div>4.9 S</div>
+                <div class="bold">Power</div><div>326 HP</div>
+                <div class="bold">Top Speed</div><div>277 KM/h</div>
+                <div class="bold">Torque</div><div>440 NM</div>
+                <div class="bold">Price</div><div>$60,000</div>
+            </div>
+            <div style="display: flex; gap: 10px;">
+                <button class="view-details" onclick="location.href='rent-details.html?car=ToyotaSupraMK4'">View Details</button>
+                <button class="rent-button-card view-details" style="flex-grow: 1;" onclick="location.href='rent-details.html?car=ToyotaSupraMK4'">RENT NOW</button>
+            </div>
+        </div>
+
+        <!-- Car Card 4 -->
+        <div class="car-card" data-make="toyota" data-model="supra-mk5" data-year="2023" data-price="65000" data-engine="petrol">
+            <h3>TOYOTA SUPRA MK5</h3>
+            <img class="car" src="/ITHCI ASSETS/TOYOTA SUPRA MK5.png" alt="Toyota Supra MK5">
+            <div class="specs">
+                <div class="bold">YEAR</div><div>2023</div>
+                <div><img class="flag" src="https://upload.wikimedia.org/wikipedia/commons/9/9e/Flag_of_Japan.svg" alt="JP Flag"></div><div>JP</div>
+                <div class="bold">Engine</div><div>3.0L Petrol</div>
+                <div class="bold">0-100 KM/h</div><div>3.9 S</div>
+                <div class="bold">Power</div><div>382 HP</div>
+                <div class="bold">Top Speed</div><div>250 KM/h</div>
+                <div class="bold">Torque</div><div>500 NM</div>
+                <div class="bold">Price</div><div>$65,000</div>
+            </div>
+            <div style="display: flex; gap: 10px;">
+                <button class="view-details" onclick="location.href='rent-details.html?car=ToyotaSupraMK5'">View Details</button>
+                <button class="rent-button-card view-details" style="flex-grow: 1;" onclick="location.href='rent-details.html?car=ToyotaSupraMK5'">RENT NOW</button>
+            </div>
+        </div>
+
+        <!-- Car Card 5 -->
+        <div class="car-card" data-make="bmw" data-model="135i" data-year="2022" data-price="45000" data-engine="petrol">
+            <h3>BMW 135i</h3>
+            <img class="car" src="/ITHCI ASSETS/BMW 135i.png" alt="BMW 135i">
+            <div class="specs">
+                <div class="bold">YEAR</div><div>2022</div>
+                <div><img class="flag" src="https://upload.wikimedia.org/wikipedia/commons/b/ba/Flag_of_Germany.svg" alt="DE Flag"></div><div>DE</div>
+                <div class="bold">Engine</div><div>3.0L Petrol</div>
+                <div class="bold">0-100 KM/h</div><div>5.3 S</div>
+                <div class="bold">Power</div><div>306 HP</div>
+                <div class="bold">Top Speed</div><div>250 KM/h</div>
+                <div class="bold">Torque</div><div>400 NM</div>
+                <div class="bold">Price</div><div>$45,000</div>
+            </div>
+            <div style="display: flex; gap: 10px;">
+                <button class="view-details" onclick="location.href='rent-details.html?car=BMW135i'">View Details</button>
+                <button class="rent-button-card view-details" style="flex-grow: 1;" onclick="location.href='rent-details.html?car=BMW135i'">RENT NOW</button>
+            </div>
+        </div>
+
+        <!-- Car Card 6 -->
+        <div class="car-card" data-make="bmw" data-model="i8" data-year="2021" data-price="120000" data-engine="hybrid">
+            <h3>BMW i8</h3>
+            <img class="car" src="/ITHCI ASSETS/BMW I8.png" alt="BMW i8">
+            <div class="specs">
+                <div class="bold">YEAR</div><div>2021</div>
+                <div><img class="flag" src="https://upload.wikimedia.org/wikipedia/commons/b/ba/Flag_of_Germany.svg" alt="DE Flag"></div><div>DE</div>
+                <div class="bold">Engine</div><div>1.5L Hybrid</div>
+                <div class="bold">0-100 KM/h</div><div>4.4 S</div>
+                <div class="bold">Power</div><div>369 HP</div>
+                <div class="bold">Top Speed</div><div>250 KM/h</div>
+                <div class="bold">Torque</div><div>320 NM</div>
+                <div class="bold">Price</div><div>$120,000</div>
+            </div>
+            <div style="display: flex; gap: 10px;">
+                <button class="view-details" onclick="location.href='rent-details.html?car=BMWi8'">View Details</button>
+                <button class="rent-button-card view-details" style="flex-grow: 1;" onclick="location.href='rent-details.html?car=BMWi8'">RENT NOW</button>
+            </div>
+        </div>
+
+        <!-- Car Card 7 -->
+        <div class="car-card" data-make="chevrolet" data-model="corvette-c8" data-year="2023" data-price="85000" data-engine="petrol">
+            <h3>CHEVROLET CORVETTE C8</h3>
+            <img class="car" src="/ITHCI ASSETS/CHEVROLLETE CORVET-C8.png" alt="Chevrolet Corvette C8">
+            <div class="specs">
+                <div class="bold">YEAR</div><div>2023</div>
+                <div><img class="flag" src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg" alt="US Flag"></div><div>US</div>
+                <div class="bold">Engine</div><div>6.2L Petrol</div>
+                <div class="bold">0-100 KM/h</div><div>3.0 S</div>
+                <div class="bold">Power</div><div>495 HP</div>
+                <div class="bold">Top Speed</div><div>312 KM/h</div>
+                <div class="bold">Torque</div><div>637 NM</div>
+                <div class="bold">Price</div><div>$85,000</div>
+            </div>
+            <div style="display: flex; gap: 10px;">
+                <button class="view-details" onclick="location.href='rent-details.html?car=ChevroletCorvetteC8'">View Details</button>
+                <button class="rent-button-card view-details" style="flex-grow: 1;" onclick="location.href='rent-details.html?car=ChevroletCorvetteC8'">RENT NOW</button>
+            </div>
+        </div>
+
+        <!-- Car Card 8 -->
+        <div class="car-card" data-make="dodge" data-model="hellcat" data-year="2023" data-price="95000" data-engine="petrol">
+            <h3>DODGE HELLCAT</h3>
+            <img class="car" src="/ITHCI ASSETS/DODGE HELLCAT.png" alt="Dodge Hellcat">
+            <div class="specs">
+                <div class="bold">YEAR</div><div>2023</div>
+                <div><img class="flag" src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg" alt="US Flag"></div><div>US</div>
+                <div class="bold">Engine</div><div>6.2L Petrol</div>
+                <div class="bold">0-100 KM/h</div><div>3.6 S</div>
+                <div class="bold">Power</div><div>717 HP</div>
+                <div class="bold">Top Speed</div><div>327 KM/h</div>
+                <div class="bold">Torque</div><div>881 NM</div>
+                <div class="bold">Price</div><div>$95,000</div>
+            </div>
+            <div style="display: flex; gap: 10px;">
+                <button class="view-details" onclick="location.href='rent-details.html?car=DodgeHellcat'">View Details</button>
+                <button class="rent-button-card view-details" style="flex-grow: 1;" onclick="location.href='rent-details.html?car=DodgeHellcat'">RENT NOW</button>
+            </div>
+        </div>
+
+        <!-- Car Card 9 -->
+        <div class="car-card" data-make="ford" data-model="bronco" data-year="2023" data-price="40000" data-engine="petrol">
+            <h3>FORD BRONCO</h3>
+            <img class="car" src="/ITHCI ASSETS/FORD BRONCO.png" alt="Ford Bronco">
+            <div class="specs">
+                <div class="bold">YEAR</div><div>2023</div>
+                <div><img class="flag" src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg" alt="US Flag"></div><div>US</div>
+                <div class="bold">Engine</div><div>2.3L Petrol</div>
+                <div class="bold">0-100 KM/h</div><div>7.0 S</div>
+                <div class="bold">Power</div><div>300 HP</div>
+                <div class="bold">Top Speed</div><div>161 KM/h</div>
+                <div class="bold">Torque</div><div>441 NM</div>
+                <div class="bold">Price</div><div>$40,000</div>
+            </div>
+            <div style="display: flex; gap: 10px;">
+                <button class="view-details" onclick="location.href='rent-details.html?car=FordBronco'">View Details</button>
+                <button class="rent-button-card view-details" style="flex-grow: 1;" onclick="location.href='rent-details.html?car=FordBronco'">RENT NOW</button>
+            </div>
+        </div>
+
+        <!-- Car Card 10 -->
+        <div class="car-card" data-make="lamborghini" data-model="huracan" data-year="2023" data-price="250000" data-engine="petrol">
+            <h3>LAMBORGHINI HURACAN</h3>
+            <img class="car" src="/ITHCI ASSETS/LAMBORGHINI-HURACAN.png" alt="Lamborghini Huracan">
+            <div class="specs">
+                <div class="bold">YEAR</div><div>2023</div>
+                <div><img class="flag" src="https://upload.wikimedia.org/wikipedia/commons/0/03/Flag_of_Italy.svg" alt="IT Flag"></div><div>IT</div>
+                <div class="bold">Engine</div><div>5.2L Petrol</div>
+                <div class="bold">0-100 KM/h</div><div>2.9 S</div>
+                <div class="bold">Power</div><div>631 HP</div>
+                <div class="bold">Top Speed</div><div>325 KM/h</div>
+                <div class="bold">Torque</div><div>600 NM</div>
+                <div class="bold">Price</div><div>$250,000</div>
+            </div>
+            <div style="display: flex; gap: 10px;">
+                <button class="view-details" onclick="location.href='rent-details.html?car=LamborghiniHuracan'">View Details</button>
+                <button class="rent-button-card view-details" style="flex-grow: 1;" onclick="location.href='rent-details.html?car=LamborghiniHuracan'">RENT NOW</button>
+            </div>
+        </div>
+
+        <!-- Car Card 11 -->
+        <div class="car-card" data-make="lamborghini" data-model="urus" data-year="2023" data-price="220000" data-engine="petrol">
+            <h3>LAMBORGHINI URUS</h3>
+            <img class="car" src="/ITHCI ASSETS/LAMBORGHINI-URUS.png" alt="Lamborghini Urus">
+            <div class="specs">
+                <div class="bold">YEAR</div><div>2023</div>
+                <div><img class="flag" src="https://upload.wikimedia.org/wikipedia/commons/0/03/Flag_of_Italy.svg" alt="IT Flag"></div><div>IT</div>
+                <div class="bold">Engine</div><div>4.0L Petrol</div>
+                <div class="bold">0-100 KM/h</div><div>2.3 S</div>
+                <div class="bold">Power</div><div>657 HP</div>
+                <div class="bold">Top Speed</div><div>305 KM/h</div>
+                <div class="bold">Torque</div><div>850 NM</div>
+                <div class="bold">Price</div><div>$220,000</div>
+            </div>
+            <div style="display: flex; gap: 10px;">
+                <button class="view-details" onclick="location.href='rent-details.html?car=LamborghiniUrus'">View Details</button>
+                <button class="rent-button-card view-details" style="flex-grow: 1;" onclick="location.href='rent-details.html?car=LamborghiniUrus'">RENT NOW</button>
+            </div>
+        </div>
+
+        <!-- Car Card 12 -->
+        <div class="car-card" data-make="toyota" data-model="land-cruiser" data-year="2023" data-price="80000" data-engine="diesel">
+            <h3>TOYOTA LAND CRUISER</h3>
+            <img class="car" src="/ITHCI ASSETS/LAND CRUISER.png" alt="Toyota Land Cruiser">
+            <div class="specs">
+                <div class="bold">YEAR</div><div>2023</div>
+                <div><img class="flag" src="https://upload.wikimedia.org/wikipedia/commons/9/9e/Flag_of_Japan.svg" alt="JP Flag"></div><div>JP</div>
+                <div class="bold">Engine</div><div>3.3L Diesel</div>
+                <div class="bold">0-100 KM/h</div><div>7.0 S</div>
+                <div class="bold">Power</div><div>304 HP</div>
+                <div class="bold">Top Speed</div><div>200 KM/h</div>
+                <div class="bold">Torque</div><div>700 NM</div>
+                <div class="bold">Price</div><div>$80,000</div>
+            </div>
+            <div style="display: flex; gap: 10px;">
+                <button class="view-details" onclick="location.href='rent-details.html?car=ToyotaLandCruiser'">View Details</button>
+                <button class="rent-button-card view-details" style="flex-grow: 1;" onclick="location.href='rent-details.html?car=ToyotaLandCruiser'">RENT NOW</button>
+            </div>
+        </div>
+
+        <!-- Car Card 13 -->
+        <div class="car-card" data-make="lexus" data-model="lx600" data-year="2023" data-price="95000" data-engine="petrol">
+            <h3>LEXUS LX600</h3>
+            <img class="car" src="/ITHCI ASSETS/LEXUS LX600.png" alt="Lexus LX600">
+            <div class="specs">
+                <div class="bold">YEAR</div><div>2023</div>
+                <div><img class="flag" src="https://upload.wikimedia.org/wikipedia/commons/9/9e/Flag_of_Japan.svg" alt="JP Flag"></div><div>JP</div>
+                <div class="bold">Engine</div><div>3.5L Petrol</div>
+                <div class="bold">0-100 KM/h</div><div>6.9 S</div>
+                <div class="bold">Power</div><div>409 HP</div>
+                <div class="bold">Top Speed</div><div>210 KM/h</div>
+                <div class="bold">Torque</div><div>650 NM</div>
+                <div class="bold">Price</div><div>$95,000</div>
+            </div>
+            <div style="display: flex; gap: 10px;">
+                <button class="view-details" onclick="location.href='rent-details.html?car=LexusLX600'">View Details</button>
+                <button class="rent-button-card view-details" style="flex-grow: 1;" onclick="location.href='rent-details.html?car=LexusLX600'">RENT NOW</button>
+            </div>
+        </div>
+
+        <!-- Car Card 14 -->
+        <div class="car-card" data-make="mazda" data-model="mx5" data-year="2023" data-price="32000" data-engine="petrol">
+            <h3>MAZDA MX5</h3>
+            <img class="car" src="/ITHCI ASSETS/MAZDA MX-5.png" alt="Mazda MX5">
+            <div class="specs">
+                <div class="bold">YEAR</div><div>2023</div>
+                <div><img class="flag" src="https://upload.wikimedia.org/wikipedia/commons/9/9e/Flag_of_Japan.svg" alt="JP Flag"></div><div>JP</div>
+                <div class="bold">Engine</div><div>2.0L Petrol</div>
+                <div class="bold">0-100 KM/h</div><div>5.7 S</div>
+                <div class="bold">Power</div><div>181 HP</div>
+                <div class="bold">Top Speed</div><div>220 KM/h</div>
+                <div class="bold">Torque</div><div>205 NM</div>
+                <div class="bold">Price</div><div>$32,000</div>
+            </div>
+            <div style="display: flex; gap: 10px;">
+                <button class="view-details" onclick="location.href='rent-details.html?car=MazdaMX5'">View Details</button>
+                <button class="rent-button-card view-details" style="flex-grow: 1;" onclick="location.href='rent-details.html?car=MazdaMX5'">RENT NOW</button>
+            </div>
+        </div>
+
+        <!-- Car Card 15 -->
+        <div class="car-card" data-make="mclaren" data-model="720s-spider" data-year="2023" data-price="300000" data-engine="petrol">
+            <h3>MCLAREN 720S SPIDER</h3>
+            <img class="car" src="/ITHCI ASSETS/MCLAREN-720S-SPIDER.png" alt="McLaren 720S Spider">
+            <div class="specs">
+                <div class="bold">YEAR</div><div>2023</div>
+                <div><img class="flag" src="https://flagcdn.com/w320/gb.png" alt="UK Flag"></div><div>UK</div>
+                <div class="bold">Engine</div><div>4.0L Petrol</div>
+                <div class="bold">0-100 KM/h</div><div>2.9 S</div>
+                <div class="bold">Power</div><div>710 HP</div>
+                <div class="bold">Top Speed</div><div>341 KM/h</div>
+                <div class="bold">Torque</div><div>770 NM</div>
+                <div class="bold">Price</div><div>$300,000</div>
+            </div>
+            <div style="display: flex; gap: 10px;">
+                <button class="view-details" onclick="location.href='rent-details.html?car=McLaren720sSpider'">View Details</button>
+                <button class="rent-button-card view-details" style="flex-grow: 1;" onclick="location.href='rent-details.html?car=McLaren720sSpider'">RENT NOW</button>
+            </div>
+        </div>
+
+        <!-- Car Card 16 -->
+        <div class="car-card" data-make="mercedes" data-model="g63" data-year="2023" data-price="180000" data-engine="petrol">
+            <h3>MERCEDES G63</h3>
+            <img class="car" src="/ITHCI ASSETS/MERCEDEZ-BENZ-Z-G63.png" alt="Mercedes G63">
+            <div class="specs">
+                <div class="bold">YEAR</div><div>2023</div>
+                <div><img class="flag" src="https://flagcdn.com/w320/de.png" alt="DE Flag"></div><div>DE</div>
+                <div class="bold">Engine</div><div>4.0L Petrol</div>
+                <div class="bold">0-100 KM/h</div><div>4.5 S</div>
+                <div class="bold">Power</div><div>577 HP</div>
+                <div class="bold">Top Speed</div><div>240 KM/h</div>
+                <div class="bold">Torque</div><div>850 NM</div>
+                <div class="bold">Price</div><div>$180,000</div>
+            </div>
+            <div style="display: flex; gap: 10px;">
+                <button class="view-details" onclick="location.href='rent-details.html?car=MercedesG63'">View Details</button>
+                <button class="rent-button-card view-details" style="flex-grow: 1;" onclick="location.href='rent-details.html?car=MercedesG63'">RENT NOW</button>
+            </div>
+        </div>
+
+        <!-- Car Card 17 -->
+        <div class="car-card" data-make="mitsubishi" data-model="lancer-gt" data-year="2022" data-price="25000" data-engine="petrol">
+            <h3>MITSUBISHI LANCER GT</h3>
+            <img class="car" src="/ITHCI ASSETS/MITSUBISHI LANCER GT.png" alt="Mitsubishi Lancer GT">
+            <div class="specs">
+                <div class="bold">YEAR</div><div>2022</div>
+                <div><img class="flag" src="https://upload.wikimedia.org/wikipedia/commons/9/9e/Flag_of_Japan.svg" alt="JP Flag"></div><div>JP</div>
+                <div class="bold">Engine</div><div>2.4L Petrol</div>
+                <div class="bold">0-100 KM/h</div><div>7.5 S</div>
+                <div class="bold">Power</div><div>168 HP</div>
+                <div class="bold">Top Speed</div><div>205 KM/h</div>
+                <div class="bold">Torque</div><div>226 NM</div>
+                <div class="bold">Price</div><div>$25,000</div>
+            </div>
+            <div style="display: flex; gap: 10px;">
+                <button class="view-details" onclick="location.href='rent-details.html?car=MitsubishiLancerGT'">View Details</button>
+                <button class="rent-button-card view-details" style="flex-grow: 1;" onclick="location.href='rent-details.html?car=MitsubishiLancerGT'">RENT NOW</button>
+            </div>
+        </div>
+
+        <!-- Car Card 18 -->
+        <div class="car-card" data-make="nissan" data-model="gtr-r35" data-year="2023" data-price="120000" data-engine="petrol">
+            <h3>NISSAN GTR R35</h3>
+            <img class="car" src="/ITHCI ASSETS/NISSAN GTR-33.png" alt="Nissan GTR R35">
+            <div class="specs">
+                <div class="bold">YEAR</div><div>2023</div>
+                <div><img class="flag" src="https://upload.wikimedia.org/wikipedia/commons/9/9e/Flag_of_Japan.svg" alt="JP Flag"></div><div>JP</div>
+                <div class="bold">Engine</div><div>3.8L Petrol</div>
+                <div class="bold">0-100 KM/h</div><div>2.9 S</div>
+                <div class="bold">Power</div><div>600 HP</div>
+                <div class="bold">Top Speed</div><div>315 KM/h</div>
+                <div class="bold">Torque</div><div>652 NM</div>
+                <div class="bold">Price</div><div>$120,000</div>
+            </div>
+            <div style="display: flex; gap: 10px;">
+                <button class="view-details" onclick="location.href='rent-details.html?car=NissanGTRR35'">View Details</button>
+                <button class="rent-button-card view-details" style="flex-grow: 1;" onclick="location.href='rent-details.html?car=NissanGTRR35'">RENT NOW</button>
+            </div>
+        </div>
+
+        <!-- Car Card 19 -->
+        <div class="car-card" data-make="subaru" data-model="sti" data-year="2021" data-price="40000" data-engine="petrol">
+            <h3>SUBARU STI</h3>
+            <img class="car" src="/ITHCI ASSETS/SUBARU STI.png" alt="Subaru STI">
+            <div class="specs">
+                <div class="bold">YEAR</div><div>2021</div>
+                <div><img class="flag" src="https://upload.wikimedia.org/wikipedia/commons/9/9e/Flag_of_Japan.svg" alt="JP Flag"></div><div>JP</div>
+                <div class="bold">Engine</div><div>2.5L Petrol</div>
+                <div class="bold">0-100 KM/h</div><div>4.9 S</div>
+                <div class="bold">Power</div><div>310 HP</div>
+                <div class="bold">Top Speed</div><div>250 KM/h</div>
+                <div class="bold">Torque</div><div>393 NM</div>
+                <div class="bold">Price</div><div>$40,000</div>
+            </div>
+            <div style="display: flex; gap: 10px;">
+                <button class="view-details" onclick="location.href='rent-details.html?car=SubaruSTI'">View Details</button>
+                <button class="rent-button-card view-details" style="flex-grow: 1;" onclick="location.href='rent-details.html?car=SubaruSTI'">RENT NOW</button>
+            </div>
+        </div>
+<!-- Car Card 20 -->
+<div class="car-card" data-make="suzuki" data-model="g-mini" data-year="2023" data-price="15000" data-engine="petrol">
+    <h3>SUZUKI G MINI</h3>
+    <img class="car" src="/ITHCI ASSETS/SUZUKI-G-MINI.png" alt="Suzuki G Mini">
+    <div class="specs">
+        <div class="bold">YEAR</div><div>2023</div>
+        <div><img class="flag" src="https://upload.wikimedia.org/wikipedia/commons/9/9e/Flag_of_Japan.svg" alt="EU Flag"></div><div>JP</div>
+        <div class="bold">Engine</div><div>1.5L Petrol</div>
+        <div class="bold">0-100 KM/h</div><div>12.5 S</div>
+        <div class="bold">Power</div><div>101 HP</div>
+        <div class="bold">Top Speed</div><div>145 KM/h</div>
+        <div class="bold">Torque</div><div>130 NM</div>
+        <div class="bold">Price</div><div>$15,000</div>
+    </div>
+   <div style="display: flex; gap: 10px;">
+                <button class="view-details" onclick="location.href='rent-details.html?car=SubaruSTI'">View Details</button>
+                <button class="rent-button-card view-details" style="flex-grow: 1;" onclick="location.href='rent-details.html?car=SuzukiGMini'">RENT NOW</button>
+            </div>
+</div>
+        </div>
+
+        <!-- Pagination or Load More Button -->
+        <div class="pagination">
+            <button class="load-more">Load More</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <h2>TURN HEADS. LEAVE A MARK</h2>
+            <p><strong>CONTACT US</strong></p>
+            <p>PHONE: 0999-123-4567</p>
+            <p>EMAIL: HYPERENTS@GMAIL.COM</p>
+            <p>LOCATION: BRGY. MANG JUAN</p>
+            <p class="copyright">© 2025 Hyper Rents. All rights reserved.</p>
+        </div>
+    </footer>
+
+   
+</body>
+</html>

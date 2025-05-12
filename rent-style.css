@@ -1,0 +1,275 @@
+/* rent-style.css - Improved Version */
+/* ================================= */
+
+/* General Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Oswald', sans-serif;
+}
+
+body {
+  background-color: #f8f8f8;
+  color: #333;
+  font-family: 'Oswald', sans-serif;
+  line-height: 1.6;
+}
+
+/* Navbar Styles (Consistent with other pages) */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #000;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-left, .nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.nav-left a, .nav-right a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 300;
+  transition: opacity 0.3s;
+}
+
+.nav-left a:hover, .nav-right a:hover {
+  opacity: 0.8;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.time-container {
+  display: flex;
+  align-items: center;
+  background-color: #333;
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin-right: 15px;
+}
+
+.time {
+  font-size: 14px;
+}
+
+.profile-icon, .hamburger-icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 15px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.profile-icon:hover, .hamburger-icon:hover {
+  transform: scale(1.1);
+}
+
+.container {
+  background: #fff;
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+/* Car Display Section */
+.car-display {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 350px;
+  background: #f0f0f0;
+}
+
+.car-display img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s;
+}
+
+.car-display:hover img {
+  transform: scale(1.02);
+}
+
+/* Details Section */
+.car-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.car-title {
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+  color: #222;
+}
+
+.car-year {
+  color: #666;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+/* Specs Grid */
+.specs-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.spec-item {
+  background: #f9f9f9;
+  padding: 12px;
+  border-radius: 6px;
+}
+
+.spec-label {
+  font-size: 0.8rem;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.spec-value {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-top: 5px;
+}
+
+/* Features List */
+.features-section {
+  margin: 25px 0;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  font-size: 0.95rem;
+  padding: 8px 0;
+}
+
+.feature-item::before {
+  content: "✓";
+  color: #000;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+/* Rental Form */
+.rental-form {
+  background: #f9f9f9;
+  padding: 25px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #444;
+}
+
+input[type="number"] {
+  width: 100%;
+  max-width: 120px;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+/* Price Summary */
+.price-summary {
+  background: #000;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 25px 0;
+}
+
+.price-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.total-row {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+/* Rent Button */
+.rent-btn-container {
+  margin-top: 20px;
+}
+
+button#confirm-rent {
+  background-color: #000;
+  color: #fff;
+  padding: 14px 0;
+  border: none;
+  border-radius: 6px;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+button#confirm-rent:hover {
+  background-color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+    padding: 20px;
+    margin: 20px 10px;
+  }
+  
+  .car-display {
+    height: 250px;
+  }
+  
+  .specs-grid, .features-grid {
+    grid-template-columns: 1fr;
+  }
+}

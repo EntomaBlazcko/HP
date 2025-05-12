@@ -1,0 +1,141 @@
+Hyper Rent Car List
+
+1. Toyota GR86
+Engine: 2.4L
+0-100 KM/h: 6.1S
+Power: 228 HP
+Top Speed: 216 KM/h
+Torque: 250 NM
+
+2. Toyota GT86
+Engine: 2.0L
+0-100 KM/h: 7.6S
+Power: 197 HP
+Top Speed: 225 KM/h
+Torque: 205 NM
+
+3. Toyota Supra MK4
+Engine: 3.0L
+0-100 KM/h: 4.9S
+Power: 326 HP
+Top Speed: 277 KM/h
+Torque: 440 NM
+
+4. Toyota Supra MK5
+Engine: 3.0L
+0-100 KM/h: 3.9S
+Power: 382 HP
+Top Speed: 250 KM/h
+Torque: 500 NM
+
+5. BMW 135i
+Engine: 3.0L
+0-100 KM/h: 5.3S
+Power: 306 HP
+Top Speed: 250 KM/h
+Torque: 400 NM
+
+6. BMW i8
+Engine: 1.5L
+0-100 KM/h: 4.4S
+Power: 369 HP
+Top Speed: 250 KM/h
+Torque: 320 NM
+
+7. Chevrolet Corvette C8
+Engine: 6.2L
+0-100 KM/h: 3.0S
+Power: 495 HP
+Top Speed: 312 KM/h
+Torque: 637 NM
+
+8. Dodge Hellcat
+Engine: 6.2L
+0-100 KM/h: 3.6S
+Power: 717 HP
+Top Speed: 327 KM/h
+Torque: 881 NM
+
+9. Ford Bronco
+Engine: 2.3L
+0-100 KM/h: 7.0S
+Power: 300 HP
+Top Speed: 161 KM/h
+Torque: 441 NM
+
+10. Lamborghini Hurucan
+Engine: 5.2L
+0-100 KM/h: 2.9S
+Power: 631 HP
+Top Speed: 325 KM/h
+Torque: 600 NM
+
+11. Lamborghini Urus
+Engine: 4.0L
+0-100 KM/h: 2.3S
+Power: 657 HP
+Top Speed: 305 KM/h
+Torque: 850 NM
+
+12. Toyota Land Cruiser
+Engine: 3.3L
+0-100 KM/h: 7.0S
+Power: 304 HP
+Top Speed: 200 KM/h
+Torque: 700 NM
+
+13. Lexus LX600
+Engine: 3.5L
+0-100 KM/h: 6.9S
+Power: 409 HP
+Top Speed: 210 KM/h
+Torque: 650 NM
+
+14. Mazda MX5
+Engine: 2.0L
+0-100 KM/h: 5.7S
+Power: 181 HP
+Top Speed: 220 KM/h
+Torque: 205 NM
+
+15. Mclaren 720s Spider
+Engine: 4.0L
+0-100 KM/h: 2.9S
+Power: 710 HP
+Top Speed: 341 KM/h
+Torque: 770 NM
+
+16. Mercedes Benz G63
+Engine: 4.0L
+0-100 KM/h: 4.5S
+Power: 577 HP
+Top Speed: 240 KM/h
+Torque: 850 NM
+
+17. Mitsubishi Lancer GT
+Engine: 2.4L
+0-100 KM/h: 7.5S
+Power: 168 HP
+Top Speed: 205 KM/h
+Torque: 226 NM
+
+18. Nissan GTR R35
+Engine: 3.8L
+0-100 KM/h: 2.9S
+Power: 600 HP
+Top Speed: 315 KM/h
+Torque: 652 NM
+
+19. Subaru STI
+Engine: 2.5L
+0-100 KM/h: 4.9S
+Power: 310 HP
+Top Speed: 250 KM/h
+Torque: 393 NM
+
+20. Suzuki G Mini
+Engine: 1.5L
+0-100 KM/h: 12.5S
+Power: 101 HP
+Top Speed: 145 KM/h
+Torque: 130 NM

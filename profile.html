@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <title>Your Profile</title>
+  <link rel="stylesheet" href="profilestyle.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="nav-left">
+            <a href="index.html" onclick="navigateTo('home-section'); return false;">HOME</a>
+            <a href="#contact">CONTACT US</a>
+        </div>
+        <div class="logo">HYPER RENTS</div>
+        <div class="nav-right">
+            <div class="time-container">
+                <div class="time" id="current-time"></div>
+            </div>
+            <img src="/ITHCI ASSETS/burger.svg" alt="Menu" class="hamburger-icon" onclick="toggleMenu();">
+            <img src="/ITHCI ASSETS/profile.svg" alt="profile" class="profile-icon" onclick="location.href='profile.html'">
+        </div>
+    </div>
+    
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu" style="display: none;">
+        <div class="close-menu" onclick="toggleMenu()"><img src="/ITHCI ASSETS/X.svg"></div>
+        <a href="profile.html">PROFILE</a>
+        <a href="index.html" onclick="navigateTo('home-section'); toggleMenu(); return false;">HOME</a>
+        <a href="#contact" onclick="toggleMenu();">CONTACT US</a>
+        <a href="login.html" onclick="logout(); toggleMenu();">LOG OUT</a>
+    </div>
+    
+
+  <div class="profile-container">
+    <div class="profile-header">
+      <h1>Welcome, <span id="user-email"></span></h1>
+      <div class="stats-container">
+        <div class="stat-card">
+          <i class="fas fa-car"></i>
+          <span id="total-rentals">0</span>
+          <p>Total Rentals</p>
+        </div>
+        <div class="stat-card">
+          <i class="fas fa-clock"></i>
+          <span id="active-rentals">0</span>
+          <p>Active</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="rentals-section">
+      <h2>Your Rentals <i class="fas fa-history"></i></h2>
+      <div id="rental-list" class="rental-grid"></div>
+    </div>
+    
+    <button id="logout-btn" class="logout-btn">
+      <i class="fas fa-sign-out-alt"></i> LOG OUT
+    </button>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer" id="contact">
+    <div class="container">
+      <h2>TURN HEADS. LEAVE A MARK</h2>
+      <p><strong>CONTACT US</strong></p>
+      <p>PHONE: 0999-123-4567</p>
+      <p>EMAIL: HYPERENTS@GMAIL.COM</p>
+      <p>LOCATION: BRGY. MANG JUAN</p>
+      <p class="copyright">© 2025 Hyper Rents. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="profile.js"></script>
+</body>
+</html>
